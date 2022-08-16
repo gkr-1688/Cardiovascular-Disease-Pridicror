@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Heart Disease Detection Website</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Cardiovascular Disease Predictor Website</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+          <li>
+            <a href="http://127.0.0.1:5000/heart">Heart Disease Prediction</a>
+          </li>
+
+        </ul>
+      </div>
+      <div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <form
+      action="http://127.0.0.1:5000/heart"
+      method="POST"
+      enctype="multiport/form-data"
+    >
+      <div class="formclass">
+        <label>Age :</label>
+        <input style="margin-left:185px;" type="text" name="age"  required/><br />
+        <label>Sex(1:Male,0:Female) :</label>
+        <input style="margin-left:56px;"type="text" name="sex"  required/><br />
+        <label>Chest Pain Type(0 to 3) :</label>
+        <input style="margin-left:46px;"type="text" name="chest" required/><br />
+        <label>Trestbps :</label>
+        <input style="margin-left:152px;"type="text" name="trestbps" required/><br />
+        <label>Serum cholestoral in mg/dl :</label>
+        <input style="margin-left:24px;" type="text" name="chol" required /><br />
+        <label>Fbs(0 to 1) :</label>
+        <input style="margin-left:136px;" type="text" name="fbs" required /><br />
+
+        <label>Restecg(0 to 2) :</label>
+        <input style="margin-left:104px;" type="text" name="restecg" required /><br />
+        <label>Thalach :</label>
+        <input style="margin-left:157px;" type="text" name="thalach" required /><br />
+        <label>Exang(1:Yes,0:No) :</label>
+        <input style="margin-left:80px;"type="text" name="exang" required  /><br />
+        <label>Oldpeak :</label>
+        <input style="margin-left:154px;" type="text" name="oldpeak" required /><br />
+        <label>Slope :</label>
+        <input style="margin-left:172px;" type="text" name="slope" required /><br />
+        <label>ca :</label>
+        <input style="margin-left:197px;" type="text" name="ca" required /><br />
+        <label>Thal :</label>
+        <input style="margin-left:183px;"type="text" name="thal" required /><br />
+
+        <input style="margin-left:250px;" type="submit" name="log" id="log" class="footer-buttons" value="Results" />
+      </div>
+    </form>
+    <section class="footer">
+      <p>Copyright@Daksh Jain, Vardan Yadav, Manavi Kumari, Gurakonda konda Reddy, Kundan Chandravansi 2022</p>
+      <div class="icons">
+        <a href="https://github.com/cardiovascular-disease-predictor">Github</a>
+        <a href="https://twitter.com/Cardio_Predict">Twitter</a>
+        <a href="https://www.linkedin.com/in/cardiovasular-disease-predictor-844471238/">Linked In</a>
+      </div>
+    </section>
+  </body>
+</html>

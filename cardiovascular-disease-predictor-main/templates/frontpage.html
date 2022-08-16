@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Health Diagnosis ML</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 color="white">Cardiovascular Disease Predictor Website</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+          <li>
+            <a href="http://127.0.0.1:5000/heart">Heart Disease Prediction</a>
+          </li>
+        </ul>
+      </div>
+      <div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <div class="frontpageclass">
+      <h2>Welcome to the home page of the app</h2>
+      <p>
+        This is a smart project by a group of students from Lovely Professional University aiming to revolutionize the medical industry by predicting whether the person is suffering from cardiovascular 
+        disease or not without the use of any Conventional Machinery. This is mainly based on the application of the machine learning,meant to be employed in the remote and the downtrodden area.
+      </p>
+      <h2>Cardiovascular Disease</h2>
+      <p>
+        In this era of Covid, we are witnessing a scarcity of doctors. A lot of people are suffering without any help being provided to them and lack of any proper medical equipment to measure such disease. 
+        Heart disease can be explained as something which affects your heart in a number of ways. Diseases which come under the heart disease umbrella includes heart rhythm problems (arrhythmias); blood vessel diseases,
+         such as coronary artery disease; and heart defects you're born with (congenital heart defects), etc. The term "heart disease" is often used interchangeably with the term "cardiovascular disease." Cardiovascular disease often
+          points to conditions that involve narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke. Other heart conditions, such as those that affect your heart's muscle, valves or rhythm, 
+          also are considered forms of heart or cardiovascular disease. Many forms of heart disease can be prevented or treated proper diet and healthy lifestyle choices. Our paper pit multiple machine learning classification 
+          models against each other so as to get an idea which model is best suited for the task and uses hyperparameter tuning to improve the overall accuracy of the prediction. In this paper, we have proposed a web application 
+          that allows users to get instant prediction on their heart disease through an intelligent system online. The application is fed with various details associated with the heart. It then processes those provided details to 
+          check whether the person has the cardiovascular disease or not. The system can be used toget an initial idea on the condition of the patient. For this task, we have used the dataset which is the Cleveland heart dataset
+          to understand which model would be the best machine learning model for our task and then apply that model to predict the outcome and show it to the user.
+      </p>
+      <image
+        class="heartimage"
+        src="{{url_for('static',filename='cvd.jpg')}}"
+        alt="Heart Disease
+      Picture"
+      />
+      <h3>Symptoms</h3>
+      <ul>
+        <li>
+          Chest pain, chest tightness, chest pressure and chest discomfort
+          (angina)
+        </li>
+        <li>Shortness of breath</li>
+        <li>
+          Pain, numbness, weakness or coldness in your legs or arms if the blood
+          vessels in those parts of your body are narrowed
+        </li>
+        <li>Pain in the neck, jaw, throat, upper abdomen or back</li>
+      </ul>
+     
+      <h2>Project Created by:</h2>
+      <p>Daksh Jain, Vardan Yadav, Manavi Kumari, Gurakonda Konda Reddy, Kundan Chandravanshi</p>
+    </div>
+    <section class="footer1">
+      <p>Copyright@Daksh Jain, Vardan Yadav, Manavi Kumari, Gurakonda konda Reddy, Kundan Chandravansi 2022</p>
+      <div class="icons">
+        <a href="https://github.com/cardiovascular-disease-predictor">Github</a>
+        <a href="https://twitter.com/Cardio_Predict">Twitter</a>
+        <a href="https://www.linkedin.com/in/cardiovasular-disease-predictor-844471238/">Linked In</a>
+      </div>
+    </section>
+  </body>
+</html>

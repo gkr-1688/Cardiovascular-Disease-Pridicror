@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Heart Disease Detection Website</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <style>
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+  <body>
+    <header>
+      <h1>Cardiovascular Disease Predictor Website</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+          <li>
+            <a href="http://127.0.0.1:5000/heart">Heart Disease Prediction</a>
+          </li>
+        </ul>
+      </div>
+      <div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+    <div class="resultclass"><strong>{{resultvalue}}</strong></div>
+    <br>
+    <p style="margin-left:265px;">For further information, <strong>you can reach out to any of the doctors below:</strong></p>
+    <table>
+      <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Qualification</th>
+        <th>Enquire Now</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Dr. Devi Prasad Shetty</td>
+        <td>Bangalore </td>
+        <td>MBBS, MS, FRCS</td>
+        <td><a href="https://www.narayanahealth.org/bangalore/cardiac-surgery-adult-cardiac-surgery-paediatric/dr-devi-prasad-shetty">https://www.narayanahealth.org/bangalore/cardiac-surgery-adult-cardiac-surgery-paediatric/dr-devi-prasad-shetty</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Dr. Ashok Seth</td>
+        <td>New Delhi</td>
+        <td>MBBS, MD, FRCP, MRCP, Fellowship USA</td>
+        <td><a href="https://www.fortisescorts.in/cardiology/dr-ashok-seth">https://www.fortisescorts.in/cardiology/dr-ashok-seth</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Dr. Naresh Trehan</td>
+        <td>Gurgaon</td>
+        <td>MBBS, Diploma in Surgery, and Diploma in cardiothoracic surgery in the USA</td>
+        <td><a href="https://www.medanta.org/doctors/dr-naresh-trehan/">https://www.medanta.org/doctors/dr-naresh-trehan/</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Dr. Sandeep Attawar</td>
+        <td>Chennai</td>
+        <td>MBBS, MS, M</td>
+        <td><a href="https://www.kimshospitals.com/doctor-profile/dr-attawar-sandeep/">https://www.kimshospitals.com/doctor-profile/dr-attawar-sandeep/</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Dr. Tejas Patel</td>
+        <td>Ahmedabad</td>
+        <td>MBBS, M.D, D.M</td>
+        <td><a href="https://www.apexheart.in/doctors/dr-tejas-patel/">https://www.apexheart.in/doctors/dr-tejas-patel/</a></td>
+      </tr>
+    </table>
+    <section class="footer1">
+      <p>Copyright@Daksh Jain, Vardan Yadav, Manavi Kumari, Gurakonda Konda Reddy, Kundan Chandravansi 2022</p>
+      <div class="icons">
+        <a href="https://github.com/cardiovascular-disease-predictor">Github</a>
+        <a href="https://twitter.com/Cardio_Predict">Twitter</a>
+        <a href="https://www.linkedin.com/in/cardiovasular-disease-predictor-844471238/">Linked In</a>
+      </div>
+    </section>
+  </body>
+</html>
